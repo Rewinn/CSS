@@ -1,0 +1,99 @@
+@import url(http://weloveiconfonts.com/api/?family=entypo);
+
+[class*="entypo-"]:before {
+	font-family: 'entypo', sans-serif;
+}
+
+body {
+	background: #E4D829;
+  	font-family: 'Poiret One', cursive;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#container {
+	width: 320px;
+	margin: 50px auto;
+}
+
+.button { 
+	position: relative;
+	width:100px; 
+	height:100px; 
+	border-radius:50%;
+	display: inline-block;
+	text-align: center;
+	color: white;
+}
+
+.button .front, .button .back {
+	-webkit-transition: transform .5s linear 0s;
+    -moz-transition: transform .5s linear 0s;
+    -o-transition: transform .5s linear 0s;
+    transition: transform .5s linear 0s;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	position: absolute;
+	box-shadow: 1px 1px 1px #616161;
+	background-color: #4A3A47;
+	width: 100px; 
+	height: 100px; 
+	border-radius: 50%;
+}
+
+.button .front {
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	font-size: 50px;
+	line-height: 100px;
+}
+
+.button .back {
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg); 
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 20px;
+}
+
+.button:hover .front{
+	-webkit-transform: rotateY(-180deg);
+	transform: rotateY(-180deg);
+}
+
+ .button:hover .back{
+	-webkit-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
+
+.button .instagram {
+	background: #008080;
+}
+
+.button .twitter {
+	background-color: #4099FF;
+}
+
+.button .pinterest {
+	background-color: #CB2027
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
