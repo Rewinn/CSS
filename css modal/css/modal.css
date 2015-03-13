@@ -1,0 +1,115 @@
+body {
+  background-color: tomato;
+  color: white;
+  text-align: center;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+p {
+  font-size: 1.25em;
+  line-height: 130%;
+}
+
+p:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 6em;
+}
+
+.front hr {
+  border: 3px solid white;
+  margin: 0.5em 1.5em;
+}
+
+.modalDialog hr {
+  border: 3px solid white;
+  margin: 0.5em 3em;
+}
+
+.open {
+  font-family: 'Pacifico', cursive;
+  color: white;
+  font-size: 1.5em;
+  border: 2px solid white;
+  border-radius: 5px;
+   -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+  padding: 3px 9px;
+  text-decoration: none;
+  -webkit-transition: all 1.2s ease-in-out;
+     -moz-transition: all 1.2s ease-in-out;
+       -ms-transform: rotate(4deg) scale(1) skew(1deg) translate(10px);
+       -o-transition: all 1.2s ease-in-out;
+          transition: all 1.2s ease-in-out;
+}
+
+a:hover {
+  color: #33FFCC;
+  -webkit-transform: scale(1.304);
+     -moz-transform: scale(1.304);
+      -ms-transform: scale(1.304);
+       -o-transform: scale(1.304);
+          transform: scale(1.304);
+}
+
+.front {
+  height: 400px;
+  width: 400px;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.modalDialog {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url(../img/canopy.jpg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 100ms ease-in;
+    -moz-transition: opacity 100ms ease-in;
+    transition: opacity 100ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+.modalDialog > div {
+    color: white;
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background-color: tomato;
+}
+
+.close {
+    font-size: 1em;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: 300;
+    color: #FFFFFF;
+    position: absolute;
+    right: 7px;
+    text-align: center;
+    top: 7px;
+    text-decoration: none;
+}
+
